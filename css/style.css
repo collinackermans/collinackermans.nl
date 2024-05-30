@@ -1,0 +1,505 @@
+/* var(--color_orange, #FF9A3D); */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{ font-family: sans-serif;}
+  
+:root {
+
+    /* variabelen */
+
+
+    /* font */
+    font-family: sans-serif;
+    
+
+
+    /* color */
+    --orange:   #FF9A3D;
+    --blue:     #058ED9;
+    --darkBlue: #005989;
+    --grey:     #DFDFDF;
+    --bgBody:    #F3F3F3;
+
+
+  }
+
+
+  @media screen and (max-width: 560px){
+
+    *{flex-direction: column!important;
+    margin: 0 auto!important;
+width: 100%!important;
+
+    }
+
+    body{
+
+        padding-left: 1rem;
+        padding-left: 1rem;
+
+    }
+
+    h1{
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-size: 0.9rem !important;
+        font-weight: bold;
+    }
+    
+    h3{
+        line-height: 1.2em!important;
+    }
+
+
+
+
+
+  }
+  
+  body{
+
+
+    background-color: var(--bgBody);
+  }
+
+main{
+
+
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+section{
+
+
+    margin-bottom: 6rem;
+    display: flex;
+}
+
+
+
+
+header{
+
+    width: 100%;
+    background-color: var(--bgBody);
+    border-bottom: solid 2px black;
+    transition: all 500ms;
+    padding: 2rem;
+   
+
+
+nav{
+
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+    
+    
+
+
+
+li{
+
+    display: inline;
+    margin-right: 3rem;
+    
+}
+
+
+.logo_circle{
+
+    color: var(--orange);
+    
+}
+
+a:hover{
+
+    color: var(--orange);
+    transition: all 100ms;
+
+}
+
+}
+
+.scrolled {
+    position: fixed;
+    padding: 0.5rem;
+    border: none;
+    z-index: 999;
+
+   
+}
+
+
+button{
+
+border-radius: 0.625rem;
+width: 7.875rem;
+height: 2.5625rem;
+border: none;
+cursor: pointer;
+
+
+}
+
+button:hover{
+
+    transition: all 200ms;
+  
+
+}
+
+button.scrolltotop{
+
+    opacity: 0;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    transition: all 500ms;
+
+}
+
+button.scrolltotop.active{
+
+    opacity: 1;
+}
+
+button.scrolltotop.active:hover{
+
+   background-color: var(--orange);
+  color: white; 
+
+}
+
+button.download_cv{
+
+    background-color: var(--grey);
+}
+
+button.download_cv:hover{
+
+    background-color: var(--orange);
+    color: white;
+    
+}
+
+button.contact{
+
+    background-color: var(--blue);
+    color: white;
+}
+
+button.contact:hover{
+
+    background-color: var(--darkBlue);
+    color: white;
+    
+}
+
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+}
+
+h3{
+    line-height: 1.4em;
+}
+
+
+
+#hero_section{
+
+    height: 80vh;
+    
+}
+.rect1{
+    
+    display: flex;
+    width: 50%;
+    /* background-color: var(--orange); */
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.rect1.button{
+
+    display: flex;
+    
+}
+
+.rect1 span{color: var(--orange);}
+
+.rect2{
+    width: 50%;
+    /* background-color: var(--blue); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+img{
+
+    background-color: var(--orange);
+    border-radius: 50%;
+    width: 70%;
+  
+}
+
+
+#about_me{
+
+
+flex-direction: column;
+align-items: center;
+gap: 6rem;
+
+.container-about_me{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+img{
+
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 80%;
+}
+
+.rect1{
+
+    justify-content: flex-start;
+}
+
+
+
+.rect3{
+
+    display: flex;
+    width: 50%;
+    /* background-color: var(--orange); */
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.skillbar-empty{
+
+    width: 100%;
+  
+    border-radius: 10px;
+    background-color: var(--grey);
+    border: solid 2px black;
+
+    .skillbar-full{
+
+        background-color: #FF9A3D;
+        border-radius: 10px;
+        padding: 2%;
+        z-index: 99;
+    }
+        #front-end{width: 70%;}
+        #UX-UI{width: 60%;}
+        #videografie{width: 75%;}
+        #grafisch-ontwerp{width: 25%;}
+        #adobe{width: 50%;}
+        #figma{width: 60%;}
+}
+
+
+}
+
+#my_work{
+
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    width: 100%;
+
+
+.wrapper-mywork{
+
+display: flex;
+width: 100%;
+flex-direction: column;
+gap: 3em;
+
+.skills-choice-wrapper{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+
+
+
+    .skill-btn{
+
+        padding: 1em;
+        background-color: var(--grey);
+        border-radius: 10px;
+        cursor: pointer;
+
+
+    }
+
+    .skill-btn:hover{
+
+       
+        background-color: var(--blue);
+        transition: all 200ms;
+        
+
+
+    }
+
+    
+
+}
+
+.wrapper-thumbs{
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* justify-content: space-between; */
+row-gap: 2em;
+column-gap: 1em;
+
+
+.thumb{
+
+    width: calc(100%/3 - 1em);
+    height: 250px;
+    background-color: var(--blue);
+    position: relative;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+
+
+    h2{
+        bottom: 1em;
+        left: 1em;
+        position: absolute;
+        
+    }
+}
+
+
+.thumb#coding-cat{
+
+    background-image: url(/assets/img/coding-cat/hero.png);
+
+        h2{
+            color: white;
+        }
+}
+
+.thumb#vestingmaastricht{
+
+    background-image: url(/assets/img/vestingmaastricht/hero.png);
+    
+        h2{
+            color: black;
+        }
+}
+
+.thumb#gen-art{
+
+    background-image: url(/assets/img/facesofwar/hero.png);
+    
+        h2{
+            color: white;
+        }
+}
+
+.thumb#landbouwend-nederland{
+
+    background-image: url(/assets/img/landbouwnederland/hero.png);
+    
+        h2{
+            color: black;
+        }
+}
+
+}
+}
+
+}
+
+#contact-section{
+
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    width: 100%;
+}
+
+.container-contact{
+
+
+
+    display: flex;
+
+}
+    .contact-form-wrapper{
+
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        form{
+
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input{
+
+            padding:10px;
+            border-radius: 0.625rem;
+            width: 75%;
+            border:none;
+
+
+
+        }
+            #message{
+             padding-bottom: 25%;
+            }
+
+           
+ 
+        
+        
+          
+        
+
+    
+
+
+
+
+
+
