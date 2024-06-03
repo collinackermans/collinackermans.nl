@@ -1,0 +1,97 @@
+@media screen and (max-width: 560px){
+
+    *{flex-direction: column!important;
+    
+        gap: 1rem!important;}
+
+    section{width: 100%!important;
+    align-items: center!important;
+align-content: center!important;
+margin-bottom: 5rem!important;
+text-align: justify;}
+
+
+
+.rect1{width: 100%!important;}
+.rect2{width: 100%!important;}
+.rect3{width:100%!important;}
+.container-about_me{align-items: center!important;
+}
+.wrapper-thumbs{align-items: center;}
+a{width: 100%!important;}
+
+.container-contact{align-items: center;}
+.contact-form-wrapper{align-items: center;width: 100%;}
+form{width: 100%;align-items: center;}
+input{width: 100%;}
+    
+.rect2 img{align-items: center;}
+img{
+        width: 50%!important;
+
+    }
+
+    main{ margin: 0 auto!important;}
+    .scrolltotop{width: 10%!important;}
+    .scrolltotop img{width: 50%!important;}
+
+
+    body{
+
+        padding-left: 1rem!important;
+        padding-left: 1rem!important;
+
+    }
+
+    h1{
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-size: 0.9rem !important;
+        font-weight: bold;
+    }
+    
+    h3{
+        line-height: 1.2em!important;
+    }
+
+
+    button{
+        text-align: center!important;
+        padding: 1rem;
+        height: auto;
+        width: auto;
+
+
+    
+    }
+
+
+    .scrolled {
+        position: fixed;
+        height: 1em;
+        padding: 0!important;
+        z-index: 999;
+    
+       
+    }
+
+header{height: 3rem;
+margin-bottom: 2rem;}
+ul{display: none!important;}
+nav .download_cv{display: none!important;}
+#hero_section button{display: none;}
+#hero_section{height: 70vh;}
+#about_me img{display: none;}
+.container-about_me{gap: 3rem!important;}
+#contact-section img{display: none;}
+#contact-section .download_cv{position: absolute; left: 40%;}
+.woonplaats{display: none;}
+.email{display: none;}
+
+.contact-form-wrapper a{display: block;}
+
+  }
+  
